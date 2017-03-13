@@ -1,0 +1,6 @@
+framework module GISTFramework {
+  umbrella header "GISTFramework-umbrella.h"
+
+  export *
+  module * { export * }
+}

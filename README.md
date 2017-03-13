@@ -1,1 +1,1 @@
-# SocialGIST-Framework
+# SocialGIST

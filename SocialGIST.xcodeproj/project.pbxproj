@@ -1,0 +1,419 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		48B6BA391E76B8AB00A45BED /* SocialGIST.h in Headers */ = {isa = PBXBuildFile; fileRef = 48B6BA371E76B8AB00A45BED /* SocialGIST.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48B6BA551E76C42500A45BED /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B6BA501E76C42500A45BED /* AppInfo.swift */; };
+		48B6BA561E76C42500A45BED /* HTTPServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B6BA521E76C42500A45BED /* HTTPServiceManager.swift */; };
+		48B6BA571E76C42500A45BED /* ReachabilityHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B6BA541E76C42500A45BED /* ReachabilityHelper.swift */; };
+		9BE9A87AC8BDE1E1FF52D756 /* Pods_SocialGIST.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78FD45D49451B6BFB32013EA /* Pods_SocialGIST.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2CCA23DC784796EBFF3039AC /* Pods-SocialGIST.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialGIST.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialGIST/Pods-SocialGIST.release.xcconfig"; sourceTree = "<group>"; };
+		48B6BA341E76B8AB00A45BED /* SocialGIST.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SocialGIST.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48B6BA371E76B8AB00A45BED /* SocialGIST.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocialGIST.h; sourceTree = "<group>"; };
+		48B6BA381E76B8AB00A45BED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48B6BA501E76C42500A45BED /* AppInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
+		48B6BA521E76C42500A45BED /* HTTPServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPServiceManager.swift; sourceTree = "<group>"; };
+		48B6BA541E76C42500A45BED /* ReachabilityHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityHelper.swift; sourceTree = "<group>"; };
+		78FD45D49451B6BFB32013EA /* Pods_SocialGIST.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialGIST.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4F112442A0D01EDCFEA6BC0 /* Pods-SocialGIST.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialGIST.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialGIST/Pods-SocialGIST.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		48B6BA301E76B8AB00A45BED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BE9A87AC8BDE1E1FF52D756 /* Pods_SocialGIST.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		48B6BA2A1E76B8AB00A45BED = {
+			isa = PBXGroup;
+			children = (
+				48B6BA361E76B8AB00A45BED /* SocialGIST */,
+				48B6BA351E76B8AB00A45BED /* Products */,
+				D1FDE6FC6EE94EB1259271B3 /* Pods */,
+				95D4145812B5675D51822B2D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		48B6BA351E76B8AB00A45BED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				48B6BA341E76B8AB00A45BED /* SocialGIST.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		48B6BA361E76B8AB00A45BED /* SocialGIST */ = {
+			isa = PBXGroup;
+			children = (
+				48B6BA371E76B8AB00A45BED /* SocialGIST.h */,
+				48B6BA421E76BEA200A45BED /* Classes */,
+				48B6BA381E76B8AB00A45BED /* Info.plist */,
+			);
+			path = SocialGIST;
+			sourceTree = "<group>";
+		};
+		48B6BA421E76BEA200A45BED /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				48B6BA431E76BEA200A45BED /* Core */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		48B6BA431E76BEA200A45BED /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				48B6BA4F1E76C42500A45BED /* AppInfo */,
+				48B6BA511E76C42500A45BED /* HTTPServiceManager */,
+				48B6BA531E76C42500A45BED /* Reachability */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		48B6BA4F1E76C42500A45BED /* AppInfo */ = {
+			isa = PBXGroup;
+			children = (
+				48B6BA501E76C42500A45BED /* AppInfo.swift */,
+			);
+			path = AppInfo;
+			sourceTree = "<group>";
+		};
+		48B6BA511E76C42500A45BED /* HTTPServiceManager */ = {
+			isa = PBXGroup;
+			children = (
+				48B6BA521E76C42500A45BED /* HTTPServiceManager.swift */,
+			);
+			path = HTTPServiceManager;
+			sourceTree = "<group>";
+		};
+		48B6BA531E76C42500A45BED /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				48B6BA541E76C42500A45BED /* ReachabilityHelper.swift */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		95D4145812B5675D51822B2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				78FD45D49451B6BFB32013EA /* Pods_SocialGIST.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D1FDE6FC6EE94EB1259271B3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D4F112442A0D01EDCFEA6BC0 /* Pods-SocialGIST.debug.xcconfig */,
+				2CCA23DC784796EBFF3039AC /* Pods-SocialGIST.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		48B6BA311E76B8AB00A45BED /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48B6BA391E76B8AB00A45BED /* SocialGIST.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		48B6BA331E76B8AB00A45BED /* SocialGIST */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48B6BA3C1E76B8AB00A45BED /* Build configuration list for PBXNativeTarget "SocialGIST" */;
+			buildPhases = (
+				B882C05A15ABDCFF20AB060D /* [CP] Check Pods Manifest.lock */,
+				48B6BA2F1E76B8AB00A45BED /* Sources */,
+				48B6BA301E76B8AB00A45BED /* Frameworks */,
+				48B6BA311E76B8AB00A45BED /* Headers */,
+				48B6BA321E76B8AB00A45BED /* Resources */,
+				6348826B25568979CA3B4F25 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SocialGIST;
+			productName = SocialGIST;
+			productReference = 48B6BA341E76B8AB00A45BED /* SocialGIST.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		48B6BA2B1E76B8AB00A45BED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Social Cubix Inc.";
+				TargetAttributes = {
+					48B6BA331E76B8AB00A45BED = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3K24B25FCL;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 48B6BA2E1E76B8AB00A45BED /* Build configuration list for PBXProject "SocialGIST" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 48B6BA2A1E76B8AB00A45BED;
+			productRefGroup = 48B6BA351E76B8AB00A45BED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				48B6BA331E76B8AB00A45BED /* SocialGIST */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		48B6BA321E76B8AB00A45BED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6348826B25568979CA3B4F25 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SocialGIST/Pods-SocialGIST-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B882C05A15ABDCFF20AB060D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		48B6BA2F1E76B8AB00A45BED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48B6BA551E76C42500A45BED /* AppInfo.swift in Sources */,
+				48B6BA571E76C42500A45BED /* ReachabilityHelper.swift in Sources */,
+				48B6BA561E76C42500A45BED /* HTTPServiceManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		48B6BA3A1E76B8AB00A45BED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		48B6BA3B1E76B8AB00A45BED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		48B6BA3D1E76B8AB00A45BED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4F112442A0D01EDCFEA6BC0 /* Pods-SocialGIST.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3K24B25FCL;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SocialGIST/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cubix.SocialGIST;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		48B6BA3E1E76B8AB00A45BED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CCA23DC784796EBFF3039AC /* Pods-SocialGIST.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3K24B25FCL;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SocialGIST/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cubix.SocialGIST;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		48B6BA2E1E76B8AB00A45BED /* Build configuration list for PBXProject "SocialGIST" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48B6BA3A1E76B8AB00A45BED /* Debug */,
+				48B6BA3B1E76B8AB00A45BED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48B6BA3C1E76B8AB00A45BED /* Build configuration list for PBXNativeTarget "SocialGIST" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48B6BA3D1E76B8AB00A45BED /* Debug */,
+				48B6BA3E1E76B8AB00A45BED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 48B6BA2B1E76B8AB00A45BED /* Project object */;
+}
