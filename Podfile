@@ -7,7 +7,10 @@ target 'SocialGIST' do
 
   # Pods for SocialGIST
 
-    pod 'GISTFramework', '~> 2.1'
+#pod 'GISTFramework', '~> 2.1'
+    pod 'GISTFramework', :git => 'https://github.com/cubixlabs/GIST-Framework.git'
+    
     pod 'AlamofireObjectMapper', '~> 4.1.0'
+    pod 'IQKeyboardManagerSwift', '~> 4.0.8'
 
 end

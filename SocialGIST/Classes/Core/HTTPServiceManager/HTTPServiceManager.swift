@@ -158,6 +158,8 @@ open class HTTPServiceManager: NSObject {
     
     fileprivate func request(requestName:String, parameters:[String:Any]?, method:HTTPMethod, showHud:Bool, delegate:HTTPRequestDelegate?) -> HTTPRequest {
         
+        assert(_serverBaseURL == nil, "HTTPServiceManager.initialize(serverBaseURL: authorizationHandler:) not called.");
+        
         let httpRequest:HTTPRequest = HTTPRequest(requestName: requestName, parameters: parameters, method: method, headers: _headers);
         
         httpRequest.delegate = delegate;
@@ -169,7 +171,6 @@ open class HTTPServiceManager: NSObject {
     } //F.E.
     
     public func request(httpRequest:HTTPRequest) {
-        
         //Validation for internet connection
         guard (REACHABILITY_HELPER.isInternetConnected) else {
             self.requestDidFailWithNoInternetConnection(httpRequest: httpRequest);
@@ -199,6 +200,9 @@ open class HTTPServiceManager: NSObject {
     } //F.E.
     
     fileprivate func multipartRequest(requestName:String, parameters:[String:Any]?, method:HTTPMethod, showHud:Bool, delegate:HTTPRequestDelegate?) -> HTTPRequest {
+        
+        assert(_serverBaseURL == nil, "HTTPServiceManager.initialize(serverBaseURL: authorizationHandler:) not called.");
+        
         let httpRequest:HTTPRequest = HTTPRequest(requestName: requestName, parameters: parameters, method: method, headers: _headers);
         
         httpRequest.delegate = delegate;
@@ -397,7 +401,7 @@ open class HTTPRequest:NSObject {
             if (_urlString == nil) {
                 _urlString = HTTPServiceManager.serverBaseURL.appendingPathComponent(requestName).absoluteString;
             }
-            //--
+            
             return _urlString!;
         }
         
@@ -607,7 +611,7 @@ public extension Data {
             case 0x46:
                 return "txt";
             default:
-                print("mimeType for \(c[0]) in available");
+                print("mimeType for \(c[0]) in not available");
                 return "octet-stream";
             }
         }

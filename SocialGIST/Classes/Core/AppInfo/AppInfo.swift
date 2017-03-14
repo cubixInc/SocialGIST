@@ -34,18 +34,5 @@ class AppInfo: NSObject {
             return Bundle.main.bundleIdentifier ?? "";
         }
     } //P.E.
-
-    /*
-    +(NSString*) releaseDate
-    {
-    NSString* myString = [NSString stringWithUTF8String:__DATE__];
-    NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
-    dateFormatter.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"US"];
-    dateFormatter.dateFormat = @"MMM dd yyyy";
-    NSDate *yourDate = [dateFormatter dateFromString:myString];
-    dateFormatter.dateFormat = @"MM/dd/yyyy";
-    return [dateFormatter stringFromDate:yourDate];
-    }//F.E.
-     */
     
 } //CLS END

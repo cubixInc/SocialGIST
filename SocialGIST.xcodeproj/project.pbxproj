@@ -7,21 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48A192571E7810FD00477F58 /* GISTGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A192561E7810FD00477F58 /* GISTGlobal.swift */; };
 		48B6BA391E76B8AB00A45BED /* SocialGIST.h in Headers */ = {isa = PBXBuildFile; fileRef = 48B6BA371E76B8AB00A45BED /* SocialGIST.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		48B6BA551E76C42500A45BED /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B6BA501E76C42500A45BED /* AppInfo.swift */; };
 		48B6BA561E76C42500A45BED /* HTTPServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B6BA521E76C42500A45BED /* HTTPServiceManager.swift */; };
 		48B6BA571E76C42500A45BED /* ReachabilityHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B6BA541E76C42500A45BED /* ReachabilityHelper.swift */; };
+		48B6BA591E76CA6D00A45BED /* GISTAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B6BA581E76CA6D00A45BED /* GISTAppDelegate.swift */; };
+		48B6BA5F1E76FC3B00A45BED /* GISTUserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B6BA5D1E76FC3B00A45BED /* GISTUserPreferences.swift */; };
+		48BE3B471E780DA1003C3198 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BE3B441E780DA1003C3198 /* User.swift */; };
+		48BE3B481E780DA1003C3198 /* Mappable+ToDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BE3B461E780DA1003C3198 /* Mappable+ToDictionary.swift */; };
 		9BE9A87AC8BDE1E1FF52D756 /* Pods_SocialGIST.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78FD45D49451B6BFB32013EA /* Pods_SocialGIST.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2CCA23DC784796EBFF3039AC /* Pods-SocialGIST.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialGIST.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialGIST/Pods-SocialGIST.release.xcconfig"; sourceTree = "<group>"; };
+		48A192561E7810FD00477F58 /* GISTGlobal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GISTGlobal.swift; sourceTree = "<group>"; };
 		48B6BA341E76B8AB00A45BED /* SocialGIST.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SocialGIST.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		48B6BA371E76B8AB00A45BED /* SocialGIST.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocialGIST.h; sourceTree = "<group>"; };
 		48B6BA381E76B8AB00A45BED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48B6BA501E76C42500A45BED /* AppInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
 		48B6BA521E76C42500A45BED /* HTTPServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPServiceManager.swift; sourceTree = "<group>"; };
 		48B6BA541E76C42500A45BED /* ReachabilityHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityHelper.swift; sourceTree = "<group>"; };
+		48B6BA581E76CA6D00A45BED /* GISTAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GISTAppDelegate.swift; sourceTree = "<group>"; };
+		48B6BA5D1E76FC3B00A45BED /* GISTUserPreferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GISTUserPreferences.swift; sourceTree = "<group>"; };
+		48BE3B441E780DA1003C3198 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		48BE3B461E780DA1003C3198 /* Mappable+ToDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Mappable+ToDictionary.swift"; sourceTree = "<group>"; };
 		78FD45D49451B6BFB32013EA /* Pods_SocialGIST.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialGIST.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4F112442A0D01EDCFEA6BC0 /* Pods-SocialGIST.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialGIST.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialGIST/Pods-SocialGIST.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -38,6 +48,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		48A192551E7810FD00477F58 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				48A192561E7810FD00477F58 /* GISTGlobal.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
 		48B6BA2A1E76B8AB00A45BED = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +95,11 @@
 		48B6BA431E76BEA200A45BED /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				48B6BA581E76CA6D00A45BED /* GISTAppDelegate.swift */,
+				48A192551E7810FD00477F58 /* Global */,
+				48BE3B431E780DA1003C3198 /* Entities */,
+				48BE3B451E780DA1003C3198 /* Protocols */,
+				48B6BA5C1E76FC3B00A45BED /* UserPreferences */,
 				48B6BA4F1E76C42500A45BED /* AppInfo */,
 				48B6BA511E76C42500A45BED /* HTTPServiceManager */,
 				48B6BA531E76C42500A45BED /* Reachability */,
@@ -106,6 +129,30 @@
 				48B6BA541E76C42500A45BED /* ReachabilityHelper.swift */,
 			);
 			path = Reachability;
+			sourceTree = "<group>";
+		};
+		48B6BA5C1E76FC3B00A45BED /* UserPreferences */ = {
+			isa = PBXGroup;
+			children = (
+				48B6BA5D1E76FC3B00A45BED /* GISTUserPreferences.swift */,
+			);
+			path = UserPreferences;
+			sourceTree = "<group>";
+		};
+		48BE3B431E780DA1003C3198 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				48BE3B441E780DA1003C3198 /* User.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		48BE3B451E780DA1003C3198 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				48BE3B461E780DA1003C3198 /* Mappable+ToDictionary.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		95D4145812B5675D51822B2D /* Frameworks */ = {
@@ -242,8 +289,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				48B6BA551E76C42500A45BED /* AppInfo.swift in Sources */,
+				48B6BA5F1E76FC3B00A45BED /* GISTUserPreferences.swift in Sources */,
 				48B6BA571E76C42500A45BED /* ReachabilityHelper.swift in Sources */,
+				48A192571E7810FD00477F58 /* GISTGlobal.swift in Sources */,
 				48B6BA561E76C42500A45BED /* HTTPServiceManager.swift in Sources */,
+				48BE3B481E780DA1003C3198 /* Mappable+ToDictionary.swift in Sources */,
+				48B6BA591E76CA6D00A45BED /* GISTAppDelegate.swift in Sources */,
+				48BE3B471E780DA1003C3198 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +414,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SocialGIST/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cubix.SocialGIST;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -384,6 +437,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SocialGIST/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cubix.SocialGIST;
 				PRODUCT_NAME = "$(TARGET_NAME)";
