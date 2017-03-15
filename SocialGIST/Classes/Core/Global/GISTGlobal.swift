@@ -17,9 +17,11 @@ public class GISTGlobal: NSObject {
     //PRIVATE init so that singleton class should not be reinitialized from anyother class
     fileprivate override init() {} //C.E.
     
-    var deviceToken:String?;
+    public var deviceToken:String?;
     
-    var baseURL:URL!
-    var apiURL:URL!
+    public var apnsPermissionGranted:Bool = false;
+    
+    public var baseURL:URL!
+    public var apiURL:URL!
     
 } //F.E.
