@@ -138,7 +138,7 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
 
-  s.dependency 'GISTFramework', :git => 'https://github.com/cubixlabs/GIST-Framework.git'
+  s.dependency 'GISTFramework'
   s.dependency 'AlamofireObjectMapper', '~> 4.1.0'
   s.dependency 'IQKeyboardManagerSwift', '~> 4.0.8'
 end
