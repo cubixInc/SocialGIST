@@ -18,7 +18,7 @@ public class GISTUserPreferences: NSObject {
     public class var user:User? {
         get {
             
-            if let data: Data = UserDefaults.standard.object(forKey: "USER") as? Data {
+            if let data: Data = UserDefaults.standard.object(forKey: "APP_USER") as? Data {
                 return NSKeyedUnarchiver.unarchiveObject(with: data) as? User;
             }
             
@@ -28,14 +28,14 @@ public class GISTUserPreferences: NSObject {
         set {
             if let usr:User = newValue {
                 let data = NSKeyedArchiver.archivedData(withRootObject: usr);
-                UserDefaults.standard.set(data, forKey: "USER");
+                UserDefaults.standard.set(data, forKey: "APP_USER");
                 UserDefaults.standard.synchronize();
             }
         }
     } //P.E.
     
-    func removeUserInfo(){
-        UserDefaults.standard.removeObject(forKey: "USER")
+    public func removeUser(){
+        UserDefaults.standard.removeObject(forKey: "APP_USER")
     } //F.E.
     
 } //CLS END
