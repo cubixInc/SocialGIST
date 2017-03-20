@@ -42,7 +42,7 @@ open class User: NSObject, Mappable, ReverseMappable, NSCopying {
 	required public init?(map: Map) {
 	}
 
-	override init() {
+	override public init() {
 		super.init();
 	}
 
@@ -114,7 +114,7 @@ open class User: NSObject, Mappable, ReverseMappable, NSCopying {
 		zipCode = aDecoder.decodeObject(forKey: "zip_code") as? String;
 	}
 
-	func encodeWithCoder(_ aCoder: NSCoder) {
+	public func encodeWithCoder(_ aCoder: NSCoder) {
 		aCoder.encode(additionalNote, forKey: "additional_note");
 		aCoder.encode(cityId, forKey: "city_id");
 		aCoder.encode(countryId, forKey: "country_id");
@@ -152,7 +152,7 @@ open class User: NSObject, Mappable, ReverseMappable, NSCopying {
 		return self.clone();
 	}
 
-	func clone() -> User {
+	public func clone() -> User {
 		let instance:User = User();
 
 		instance.additionalNote = self.additionalNote;
