@@ -12,5 +12,13 @@ target 'SocialGIST' do
     
     pod 'AlamofireObjectMapper', '~> 4.1.0'
     pod 'IQKeyboardManagerSwift', '~> 4.0.8'
+    
+    pod 'FBSDKCoreKit', '~> 4.20.1'
+    pod 'FBSDKLoginKit', '~> 4.20.1'
+    pod 'FBSDKShareKit', '~> 4.20.1'
+    
+    pod 'Google/SignIn', '~> 3.0.3'
+    
+    pod 'TwitterKit', '~> 2.8.1'
 
 end

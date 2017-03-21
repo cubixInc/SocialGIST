@@ -98,8 +98,21 @@ Pod::Spec.new do |s|
 
   s.subspec 'Core' do |sp|
     sp.source_files = 'SocialGIST/Classes/Core/**/*.{swift}'
-    #sp.dependency 'SocialGIST/Core'
   end
+
+ s.subspec 'UserAuthentication' do |sp|
+    sp.source_files = 'SocialGIST/Classes/UserAuthentication/**/*.{swift}'
+
+    sp.dependency 'SocialGIST/Core'
+
+    sp.dependency 'FBSDKCoreKit', '~> 4.20.1'
+    sp.dependency 'FBSDKLoginKit', '~> 4.20.1'
+    sp.dependency 'FBSDKShareKit', '~> 4.20.1'
+
+    sp.dependency 'Google/SignIn', '~> 3.0.3'
+
+    sp.dependency 'TwitterKit', '~> 2.8.1'
+ end
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #

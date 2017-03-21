@@ -12,10 +12,14 @@
 		48B6BA551E76C42500A45BED /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B6BA501E76C42500A45BED /* AppInfo.swift */; };
 		48B6BA561E76C42500A45BED /* HTTPServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B6BA521E76C42500A45BED /* HTTPServiceManager.swift */; };
 		48B6BA571E76C42500A45BED /* ReachabilityHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B6BA541E76C42500A45BED /* ReachabilityHelper.swift */; };
-		48B6BA591E76CA6D00A45BED /* GISTAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B6BA581E76CA6D00A45BED /* GISTAppDelegate.swift */; };
-		48B6BA5F1E76FC3B00A45BED /* GISTUserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B6BA5D1E76FC3B00A45BED /* GISTUserPreferences.swift */; };
-		48BE3B471E780DA1003C3198 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BE3B441E780DA1003C3198 /* User.swift */; };
 		48BE3B481E780DA1003C3198 /* Mappable+ToDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BE3B461E780DA1003C3198 /* Mappable+ToDictionary.swift */; };
+		48EB329C1E8116DE00E5CCA3 /* GISTAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EB32971E8116DE00E5CCA3 /* GISTAppDelegate.swift */; };
+		48EB329D1E8116DE00E5CCA3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EB32991E8116DE00E5CCA3 /* User.swift */; };
+		48EB329E1E8116DE00E5CCA3 /* GISTUserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EB329B1E8116DE00E5CCA3 /* GISTUserPreferences.swift */; };
+		48EB32A71E81171B00E5CCA3 /* FBConnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EB32A11E81171B00E5CCA3 /* FBConnect.swift */; };
+		48EB32A81E81171B00E5CCA3 /* GoogleConnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EB32A31E81171B00E5CCA3 /* GoogleConnect.swift */; };
+		48EB32A91E81171B00E5CCA3 /* TwitterConnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EB32A51E81171B00E5CCA3 /* TwitterConnect.swift */; };
+		48EB32AA1E81171B00E5CCA3 /* UserAuthenticate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EB32A61E81171B00E5CCA3 /* UserAuthenticate.swift */; };
 		9BE9A87AC8BDE1E1FF52D756 /* Pods_SocialGIST.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78FD45D49451B6BFB32013EA /* Pods_SocialGIST.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,10 +32,14 @@
 		48B6BA501E76C42500A45BED /* AppInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
 		48B6BA521E76C42500A45BED /* HTTPServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPServiceManager.swift; sourceTree = "<group>"; };
 		48B6BA541E76C42500A45BED /* ReachabilityHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityHelper.swift; sourceTree = "<group>"; };
-		48B6BA581E76CA6D00A45BED /* GISTAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GISTAppDelegate.swift; sourceTree = "<group>"; };
-		48B6BA5D1E76FC3B00A45BED /* GISTUserPreferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GISTUserPreferences.swift; sourceTree = "<group>"; };
-		48BE3B441E780DA1003C3198 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		48BE3B461E780DA1003C3198 /* Mappable+ToDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Mappable+ToDictionary.swift"; sourceTree = "<group>"; };
+		48EB32971E8116DE00E5CCA3 /* GISTAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GISTAppDelegate.swift; sourceTree = "<group>"; };
+		48EB32991E8116DE00E5CCA3 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		48EB329B1E8116DE00E5CCA3 /* GISTUserPreferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GISTUserPreferences.swift; sourceTree = "<group>"; };
+		48EB32A11E81171B00E5CCA3 /* FBConnect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBConnect.swift; sourceTree = "<group>"; };
+		48EB32A31E81171B00E5CCA3 /* GoogleConnect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleConnect.swift; sourceTree = "<group>"; };
+		48EB32A51E81171B00E5CCA3 /* TwitterConnect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterConnect.swift; sourceTree = "<group>"; };
+		48EB32A61E81171B00E5CCA3 /* UserAuthenticate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAuthenticate.swift; sourceTree = "<group>"; };
 		78FD45D49451B6BFB32013EA /* Pods_SocialGIST.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialGIST.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4F112442A0D01EDCFEA6BC0 /* Pods-SocialGIST.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialGIST.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialGIST/Pods-SocialGIST.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -48,6 +56,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		489B051D1E80010000B8769C /* UserAuthentication */ = {
+			isa = PBXGroup;
+			children = (
+				48EB32961E8116DE00E5CCA3 /* AppDelegate */,
+				48EB32981E8116DE00E5CCA3 /* Entities */,
+				48EB329A1E8116DE00E5CCA3 /* UserPreferences */,
+				48EB329F1E81171B00E5CCA3 /* Authentication */,
+			);
+			path = UserAuthentication;
+			sourceTree = "<group>";
+		};
 		48A192551E7810FD00477F58 /* Global */ = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +106,7 @@
 		48B6BA421E76BEA200A45BED /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				489B051D1E80010000B8769C /* UserAuthentication */,
 				48B6BA431E76BEA200A45BED /* Core */,
 			);
 			path = Classes;
@@ -95,11 +115,8 @@
 		48B6BA431E76BEA200A45BED /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				48B6BA581E76CA6D00A45BED /* GISTAppDelegate.swift */,
 				48A192551E7810FD00477F58 /* Global */,
-				48BE3B431E780DA1003C3198 /* Entities */,
 				48BE3B451E780DA1003C3198 /* Protocols */,
-				48B6BA5C1E76FC3B00A45BED /* UserPreferences */,
 				48B6BA4F1E76C42500A45BED /* AppInfo */,
 				48B6BA511E76C42500A45BED /* HTTPServiceManager */,
 				48B6BA531E76C42500A45BED /* Reachability */,
@@ -131,28 +148,71 @@
 			path = Reachability;
 			sourceTree = "<group>";
 		};
-		48B6BA5C1E76FC3B00A45BED /* UserPreferences */ = {
-			isa = PBXGroup;
-			children = (
-				48B6BA5D1E76FC3B00A45BED /* GISTUserPreferences.swift */,
-			);
-			path = UserPreferences;
-			sourceTree = "<group>";
-		};
-		48BE3B431E780DA1003C3198 /* Entities */ = {
-			isa = PBXGroup;
-			children = (
-				48BE3B441E780DA1003C3198 /* User.swift */,
-			);
-			path = Entities;
-			sourceTree = "<group>";
-		};
 		48BE3B451E780DA1003C3198 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
 				48BE3B461E780DA1003C3198 /* Mappable+ToDictionary.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		48EB32961E8116DE00E5CCA3 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				48EB32971E8116DE00E5CCA3 /* GISTAppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		48EB32981E8116DE00E5CCA3 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				48EB32991E8116DE00E5CCA3 /* User.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		48EB329A1E8116DE00E5CCA3 /* UserPreferences */ = {
+			isa = PBXGroup;
+			children = (
+				48EB329B1E8116DE00E5CCA3 /* GISTUserPreferences.swift */,
+			);
+			path = UserPreferences;
+			sourceTree = "<group>";
+		};
+		48EB329F1E81171B00E5CCA3 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				48EB32A61E81171B00E5CCA3 /* UserAuthenticate.swift */,
+				48EB32A01E81171B00E5CCA3 /* Facebook */,
+				48EB32A21E81171B00E5CCA3 /* Google */,
+				48EB32A41E81171B00E5CCA3 /* Twitter */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		48EB32A01E81171B00E5CCA3 /* Facebook */ = {
+			isa = PBXGroup;
+			children = (
+				48EB32A11E81171B00E5CCA3 /* FBConnect.swift */,
+			);
+			path = Facebook;
+			sourceTree = "<group>";
+		};
+		48EB32A21E81171B00E5CCA3 /* Google */ = {
+			isa = PBXGroup;
+			children = (
+				48EB32A31E81171B00E5CCA3 /* GoogleConnect.swift */,
+			);
+			path = Google;
+			sourceTree = "<group>";
+		};
+		48EB32A41E81171B00E5CCA3 /* Twitter */ = {
+			isa = PBXGroup;
+			children = (
+				48EB32A51E81171B00E5CCA3 /* TwitterConnect.swift */,
+			);
+			path = Twitter;
 			sourceTree = "<group>";
 		};
 		95D4145812B5675D51822B2D /* Frameworks */ = {
@@ -289,13 +349,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				48B6BA551E76C42500A45BED /* AppInfo.swift in Sources */,
-				48B6BA5F1E76FC3B00A45BED /* GISTUserPreferences.swift in Sources */,
+				48EB329C1E8116DE00E5CCA3 /* GISTAppDelegate.swift in Sources */,
 				48B6BA571E76C42500A45BED /* ReachabilityHelper.swift in Sources */,
+				48EB32A81E81171B00E5CCA3 /* GoogleConnect.swift in Sources */,
+				48EB329E1E8116DE00E5CCA3 /* GISTUserPreferences.swift in Sources */,
+				48EB32A71E81171B00E5CCA3 /* FBConnect.swift in Sources */,
 				48A192571E7810FD00477F58 /* GISTGlobal.swift in Sources */,
+				48EB32AA1E81171B00E5CCA3 /* UserAuthenticate.swift in Sources */,
 				48B6BA561E76C42500A45BED /* HTTPServiceManager.swift in Sources */,
 				48BE3B481E780DA1003C3198 /* Mappable+ToDictionary.swift in Sources */,
-				48B6BA591E76CA6D00A45BED /* GISTAppDelegate.swift in Sources */,
-				48BE3B471E780DA1003C3198 /* User.swift in Sources */,
+				48EB329D1E8116DE00E5CCA3 /* User.swift in Sources */,
+				48EB32A91E81171B00E5CCA3 /* TwitterConnect.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
