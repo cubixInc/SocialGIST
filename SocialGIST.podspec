@@ -105,7 +105,7 @@ Pod::Spec.new do |s|
 
     sp.dependency 'SocialGIST/Core'
 
-    s.vendored_libraries = 'Pods/Google/**/*.*'
+    s.vendored_libraries = 'Google/**/*.framework'
 
     sp.dependency 'FBSDKCoreKit', '~> 4.20.1'
     sp.dependency 'FBSDKLoginKit', '~> 4.20.1'
