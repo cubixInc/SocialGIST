@@ -108,10 +108,9 @@ Pod::Spec.new do |s|
     sp.dependency 'FBSDKCoreKit', '~> 4.20.1'
     sp.dependency 'FBSDKLoginKit', '~> 4.20.1'
     sp.dependency 'FBSDKShareKit', '~> 4.20.1'
-
     sp.dependency 'Google/SignIn', '~> 3.0.3'
+    sp.dependency 'TwitterKit', '~> 2.8.1'
 
-   sp.dependency 'TwitterKit', '~> 2.8.1'
  end
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
