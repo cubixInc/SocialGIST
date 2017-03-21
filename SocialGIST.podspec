@@ -105,16 +105,11 @@ Pod::Spec.new do |s|
 
     sp.dependency 'SocialGIST/Core'
 
-    s.source_files = 'Google/*.*/*.*', 'TwitterKit/*.*/*.*'
-
-    s.vendored_libraries = 'Google/**/*.*'
-    s.vendored_libraries = 'TwitterKit/**/*.*'
-
     sp.dependency 'FBSDKCoreKit', '~> 4.20.1'
     sp.dependency 'FBSDKLoginKit', '~> 4.20.1'
     sp.dependency 'FBSDKShareKit', '~> 4.20.1'
-    sp.dependency 'Google/SignIn', '~> 3.0.3'
-    sp.dependency 'TwitterKit', '~> 2.8.1'
+#sp.dependency 'Google/SignIn', '~> 3.0.3'
+#sp.dependency 'TwitterKit', '~> 2.8.1'
 
  end
 
