@@ -100,6 +100,16 @@ Pod::Spec.new do |s|
     sp.source_files = 'SocialGIST/Classes/Core/**/*.{swift}'
   end
 
+s.subspec 'TwitterKit' do |sp|
+    sp.source = { :http => "https://kit-downloads.fabric.io/cocoapods/twitterkit/2.8.1/twitterkit.zip"}
+    sp.vendored_frameworks = "iOS/TwitterKit.framework"
+    sp.resources = "iOS/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle"
+
+    sp.frameworks = "CoreText", "QuartzCore", "CoreData", "CoreGraphics", "Foundation", "Security", "UIKit", "CoreMedia", "AVFoundation", "SafariServices"
+
+    sp.dependency 'TwitterCore', '~> 2.8'
+end
+
  s.subspec 'UserAuthentication' do |sp|
     sp.source_files = 'SocialGIST/Classes/UserAuthentication/**/*.{swift}'
 
@@ -109,7 +119,7 @@ Pod::Spec.new do |s|
 #    sp.dependency 'FBSDKLoginKit', '~> 4.20.1'
 #    sp.dependency 'FBSDKShareKit', '~> 4.20.1'
 #    sp.dependency 'Google/SignIn', '~> 3.0.3'
-    sp.dependency 'TwitterKit', '~> 2.8.1'
+#    sp.dependency 'TwitterKit', '~> 2.8.1'
 
  end
 
@@ -151,10 +161,6 @@ Pod::Spec.new do |s|
 
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-
- pre_install do |installer|
-    def installer.verify_no_static_framework_transitive_dependencies; end
- end
 
 ##s.dependency 'GISTFramework'
 ##s.dependency 'AlamofireObjectMapper', '~> 4.1.0'
