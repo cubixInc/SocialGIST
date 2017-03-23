@@ -105,13 +105,14 @@ Pod::Spec.new do |s|
 
     sp.dependency 'SocialGIST/Core'
 
-    sp.dependency 'FBSDKCoreKit', '~> 4.20.1'
-    sp.dependency 'FBSDKLoginKit', '~> 4.20.1'
-    sp.dependency 'FBSDKShareKit', '~> 4.20.1'
-#sp.dependency 'Google/SignIn', '~> 3.0.3'
-#sp.dependency 'TwitterKit', '~> 2.8.1'
+#    sp.dependency 'FBSDKCoreKit', '~> 4.20.1'
+#    sp.dependency 'FBSDKLoginKit', '~> 4.20.1'
+#    sp.dependency 'FBSDKShareKit', '~> 4.20.1'
+#    sp.dependency 'Google/SignIn', '~> 3.0.3'
+    sp.dependency 'TwitterKit', '~> 2.8.1'
 
  end
+
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -150,7 +151,7 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
 
-  s.dependency 'GISTFramework'
-  s.dependency 'AlamofireObjectMapper', '~> 4.1.0'
-  s.dependency 'IQKeyboardManagerSwift', '~> 4.0.8'
+##s.dependency 'GISTFramework'
+##s.dependency 'AlamofireObjectMapper', '~> 4.1.0'
+##s.dependency 'IQKeyboardManagerSwift', '~> 4.0.8'
 end
