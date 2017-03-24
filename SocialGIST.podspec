@@ -122,7 +122,7 @@ Pod::Spec.new do |s|
     sp.frameworks = "AddressBook", "AssetsLibrary", "CoreFoundation", "CoreLocation", "CoreMotion", "MessageUI", "SystemConfiguration"
     sp.xcconfig = { "HEADER_SEARCH_PATHS" => "$(inherited) ${PODS_ROOT}/SocialGIST/Google/Headers" }
 
-    sp.dependencies = 'FirebaseAnalytics', '~> 3.2'
+    sp.dependency = 'FirebaseAnalytics', '~> 3.2'
 end
 
 
