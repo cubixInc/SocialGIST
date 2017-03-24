@@ -50,10 +50,6 @@ import ObjectMapper
 }
 */
 
-public enum PlatformType:String{
-    case custom, facebook, gmail, twitter
-}
-
 open class User: NSObject, Mappable, ReverseMappable, NSCopying {
 	public var additionalNote: String?;
 	public var cityId: NSNumber?;
@@ -77,7 +73,7 @@ open class User: NSObject, Mappable, ReverseMappable, NSCopying {
 	public var mobileNo: String?;
 	public var name: String?;
 	public var otherData: String?;
-	public var platformType: PlatformType?;
+	public var platformType: String?;
 	public var rememberLoginTokenCreatedAt: String?;
 	public var stateId: NSNumber?;
 	public var status: NSNumber?;
@@ -153,7 +149,7 @@ open class User: NSObject, Mappable, ReverseMappable, NSCopying {
 		mobileNo = aDecoder.decodeObject(forKey: "mobile_no") as? String;
 		name = aDecoder.decodeObject(forKey: "name") as? String;
 		otherData = aDecoder.decodeObject(forKey: "other_data") as? String;
-		platformType = PlatformType(rawValue: aDecoder.decodeObject(forKey: "platform_type") as? String ?? "");
+		platformType = aDecoder.decodeObject(forKey: "platform_type") as? String;
 		rememberLoginTokenCreatedAt = aDecoder.decodeObject(forKey: "remember_login_token_created_at") as? String;
 		stateId = aDecoder.decodeObject(forKey: "state_id") as? NSNumber;
 		status = aDecoder.decodeObject(forKey: "status") as? NSNumber;
@@ -187,7 +183,7 @@ open class User: NSObject, Mappable, ReverseMappable, NSCopying {
 		aCoder.encode(mobileNo, forKey: "mobile_no");
 		aCoder.encode(name, forKey: "name");
 		aCoder.encode(otherData, forKey: "other_data");
-		aCoder.encode(platformType?.rawValue, forKey: "platform_type");
+		aCoder.encode(platformType, forKey: "platform_type");
 		aCoder.encode(rememberLoginTokenCreatedAt, forKey: "remember_login_token_created_at");
 		aCoder.encode(stateId, forKey: "state_id");
 		aCoder.encode(status, forKey: "status");
@@ -265,7 +261,7 @@ open class User: NSObject, Mappable, ReverseMappable, NSCopying {
 		map["mobile_no"] = self.reverseMap(mobileNo);
 		map["name"] = self.reverseMap(name);
 		map["other_data"] = self.reverseMap(otherData);
-		map["platform_type"] = self.reverseMap(platformType?.rawValue);
+		map["platform_type"] = self.reverseMap(platformType);
 		map["remember_login_token_created_at"] = self.reverseMap(rememberLoginTokenCreatedAt);
 		map["state_id"] = self.reverseMap(stateId);
 		map["status"] = self.reverseMap(status);

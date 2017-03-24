@@ -19,7 +19,7 @@ public class GISTGlobal: NSObject {
     
     public var deviceToken:String?;
     
-    public var apnsPermissionGranted:Bool = false;
+    public var apnsPermissionGranted:Bool?
     
     public var baseURL:URL!
     public var apiURL:URL!

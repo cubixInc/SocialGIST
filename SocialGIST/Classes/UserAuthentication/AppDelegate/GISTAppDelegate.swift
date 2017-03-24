@@ -11,11 +11,6 @@ import IQKeyboardManagerSwift
 import UserNotifications
 import GISTFramework
 
-import FBSDKCoreKit
-import FBSDKLoginKit
-
-import Google
-import GoogleSignIn
 
 open class GISTAppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
 
@@ -83,13 +78,15 @@ open class GISTAppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificati
     } //F.E.
     
     open func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
-        var handled:Bool = false;
+        let handled:Bool = false;
         
+        /*
         if (url.scheme?.hasPrefix("fb"))! {
             handled = FBSDKApplicationDelegate.sharedInstance().application(application, open: url, sourceApplication: sourceApplication, annotation: annotation);
         } else if (url.scheme?.hasPrefix("com.googleusercontent.apps"))! {
             handled = GIDSignIn.sharedInstance().handle(url, sourceApplication: sourceApplication, annotation: annotation);
         }
+         */
 
         return handled;
     } //F.E.
@@ -99,14 +96,14 @@ open class GISTAppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificati
     } //F.E.
     
     //MARK: - Keyboard Avoiding
-    private func setupKeyboardManager() {
+    open func setupKeyboardManager() {
         //Register Keyboard avoiding
         IQKeyboardManager.sharedManager().enable = true
         IQKeyboardManager.sharedManager().keyboardDistanceFromTextField = 0;
     } //F.E.
     
     //MARK: - Notification Settings
-    public func registerForPushNotifications() {
+    open func registerForPushNotifications() {
         //Registe for Notifications
         if #available(iOS 10.0, *) {
             let center = UNUserNotificationCenter.current()
@@ -116,6 +113,7 @@ open class GISTAppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificati
             center.requestAuthorization(options: types) { (granted, error) in
                 // Enable or disable features based on authorization.
                 print("granted : \(granted)");
+                GIST_GLOBAL.apnsPermissionGranted = granted;
             }
         } else {
             // Push Notification
