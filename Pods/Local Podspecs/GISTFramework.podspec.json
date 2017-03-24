@@ -1,6 +1,6 @@
 {
   "name": "GISTFramework",
-  "version": "2.1",
+  "version": "2.1.1",
   "summary": "GISTFramework is bottom architecture layour of iOS apps.",
   "description": "GISTFramework is a bottom layer architecture of all iOS apps. it has all basic features and reusable classes that an iOS app may require. We made it open source to be used by others.",
   "homepage": "https://github.com/cubixlabs/GIST-Framework",
@@ -16,7 +16,7 @@
   },
   "source": {
     "git": "https://github.com/cubixlabs/GIST-Framework.git",
-    "tag": "2.1"
+    "tag": "2.1.1"
   },
   "pod_target_xcconfig": {
     "OTHER_SWIFT_FLAGS[config=Debug]": "-DDEBUG"
