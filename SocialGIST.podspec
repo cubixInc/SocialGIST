@@ -100,16 +100,6 @@ Pod::Spec.new do |s|
     sp.source_files = 'SocialGIST/Classes/Core/**/*.{swift}'
   end
 
-s.subspec 'TwitterKit' do |sp|
-    sp.source = { :http => "https://kit-downloads.fabric.io/cocoapods/twitterkit/2.8.1/twitterkit.zip"}
-    sp.vendored_frameworks = "iOS/TwitterKit.framework"
-    sp.resources = "iOS/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle"
-
-    sp.frameworks = "CoreText", "QuartzCore", "CoreData", "CoreGraphics", "Foundation", "Security", "UIKit", "CoreMedia", "AVFoundation", "SafariServices"
-
-    sp.dependency 'TwitterCore', '~> 2.8'
-end
-
  s.subspec 'UserAuthentication' do |sp|
     sp.source_files = 'SocialGIST/Classes/UserAuthentication/**/*.{swift}'
 
@@ -122,6 +112,18 @@ end
 #    sp.dependency 'TwitterKit', '~> 2.8.1'
 
  end
+
+ s.subspec 'Google' do |sp|
+    sp.source_files = 'SocialGIST/Google/Headers/Core.h', 'SocialGIST/Google/Headers/ModuleHeaders/*.h'
+    sp.vendored_frameworks = "SocialGIST/Google/Frameworks/GGLCore.framework"
+    sp.public_header_files = "SocialGIST/Google/Headers/Core.h", "SocialGIST/Google/Headers/ModuleHeaders/*.h"
+    sp.preserve_paths = "SocialGIST/Google/Headers/module.modulemap"
+    sp.libraries = "z", "stdc++", "sqlite3"
+    sp.frameworks = "AddressBook", "AssetsLibrary", "CoreFoundation", "CoreLocation", "CoreMotion", "MessageUI", "SystemConfiguration"
+    sp.xcconfig = { "HEADER_SEARCH_PATHS" => "$(inherited) ${PODS_ROOT}/SocialGIST/Google/Headers" }
+
+    sp.dependencies = 'FirebaseAnalytics', '~> 3.2'
+end
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -166,3 +168,6 @@ end
 ##s.dependency 'AlamofireObjectMapper', '~> 4.1.0'
 ##s.dependency 'IQKeyboardManagerSwift', '~> 4.0.8'
 end
+
+
+
