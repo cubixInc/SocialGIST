@@ -117,12 +117,12 @@ Pod::Spec.new do |s|
     sp.source_files = 'SocialGIST/Google/Headers/Core.h', 'SocialGIST/Google/Headers/ModuleHeaders/*.h'
     sp.vendored_frameworks = "SocialGIST/Google/Frameworks/GGLCore.framework"
     sp.public_header_files = "SocialGIST/Google/Headers/Core.h", "SocialGIST/Google/Headers/ModuleHeaders/*.h"
-    sp.preserve_paths = "SocialGIST/Google/Headers/module.modulemap"
-    sp.libraries = "z", "stdc++", "sqlite3"
-    sp.frameworks = "AddressBook", "AssetsLibrary", "CoreFoundation", "CoreLocation", "CoreMotion", "MessageUI", "SystemConfiguration"
-    sp.xcconfig = { "HEADER_SEARCH_PATHS" => "$(inherited) ${PODS_ROOT}/SocialGIST/Google/Headers" }
+#    sp.preserve_paths = "SocialGIST/Google/Headers/module.modulemap"
+#    sp.libraries = "z", "stdc++", "sqlite3"
+#    sp.frameworks = "AddressBook", "AssetsLibrary", "CoreFoundation", "CoreLocation", "CoreMotion", "MessageUI", "SystemConfiguration"
+#    sp.xcconfig = { "HEADER_SEARCH_PATHS" => "$(inherited) ${PODS_ROOT}/SocialGIST/Google/Headers" }
 
-    sp.dependency = 'FirebaseAnalytics', '~> 3.2'
+#sp.dependency = 'FirebaseAnalytics', '~> 3.2'
 end
 
 
